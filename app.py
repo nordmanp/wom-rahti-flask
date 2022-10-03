@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     ret = { 
-        'msg': 'Flask works on Rahti!', 
+        'msg': 'GitHub Webhook deployment works!', 
         'env': os.environ.get('ENV_VAR', 'Cannot find variable ENV_VAR') 
     }
 
@@ -18,3 +18,5 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True, port=8080, host='0.0.0.0')
+
+###http://flask-test-nordmanp.rahtiapp.fi/
